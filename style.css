@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@300&display=swap');
+
+/*PÁGINA*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    position: relative;
+    /*height: 50px;*/
+    background-color: #f7f8fA;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header h1{
+  color: #3A4365;
+}
+
+  header span{
+    position: relative;
+    display: flex;
+    width: 0px;
+    height: 30px;
+    margin: 0 5px 0 15px;
+    border: 1px solid #3A4365;
+}
+  
+  header a {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #5C6480;
+  }
+  
+  a:hover {
+    color: #393d4e;
+  }
+  
+  header #logo{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+}
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Nunito';
+    background: #f7f8fA;
+    height: 8vh;
+    gap: 15px;
+  }
