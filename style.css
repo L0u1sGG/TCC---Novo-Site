@@ -109,4 +109,10 @@ header h1{
     flex-direction: column;
     text-align: center;
   }
+
+  .mobile-menu .nav-item{
+    display: block;
+    padding: 1rem 2rem;
+  }
+
 }
