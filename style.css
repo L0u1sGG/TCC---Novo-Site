@@ -57,7 +57,7 @@ header h1{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Nunito';
+  font-family: 'Nunito', sans-serif;
   background: #f7f8fA;
   height: 8vh;
   gap: 15px;
@@ -83,11 +83,15 @@ header h1{
   display: none;
 }
 
+.mobile-menu-icon .icon{
+  stop-color: #393d4e;
+}
+
 .mobile-menu{
   display: none;
 }
 
-@media screen and (max-width: 730px){
+@media screen and (max-width: 530px){
   .nav-bar{
     padding: 0.5rem 1rem;
   }
@@ -104,6 +108,10 @@ header h1{
     cursor: pointer;
   }
 
+  .mobile-menu{
+    width: 100%;
+  }
+
   .mobile-menu ul{
     display: flex;
     flex-direction: column;
@@ -112,7 +120,11 @@ header h1{
 
   .mobile-menu .nav-item{
     display: block;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem;
+    margin: auto;
+  }
+  .open{
+    display: block;
   }
 
 }
