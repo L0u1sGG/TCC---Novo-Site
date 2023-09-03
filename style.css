@@ -53,12 +53,60 @@ header h1{
     padding: 15px;
 }
   
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Nunito';
-    background: #f7f8fA;
-    height: 8vh;
-    gap: 15px;
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Nunito';
+  background: #f7f8fA;
+  height: 8vh;
+  gap: 15px;
+}
+
+/*--MOBILE MENU HAMBURGER--*/
+.nav-list{
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item{
+  margin: 0 15px
+}
+
+.mobile-menu-icon{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+@media screen and (max-width: 730px){
+  .nav-bar{
+    padding: 0.5rem 1rem;
   }
+  .nav-item{
+    display: none;
+  }
+  .mobile-menu-icon{
+    display: block;
+  }
+
+  .mobile-menu-icon button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
