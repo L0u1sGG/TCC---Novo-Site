@@ -10,7 +10,7 @@
   }
 
   header{
-    position: relative;
+    position: fixed;
     /*height: 50px;*/
     background-color: #f7f8fA;
     width: 100%;
@@ -93,7 +93,7 @@ header h1{
 
 @media screen and (max-width: 530px){
   .nav-bar{
-    padding: 0.5rem 1rem;
+    padding: 0.1rem 1rem;
   }
   .nav-item{
     display: none;
@@ -139,9 +139,15 @@ main{
 main .contentInicial{
   display: flex;
   flex-direction: row;
-  background-color: red;
-  justify-content: space-between;
+  background-color: #ECF0F1;
+  justify-content: space-around;
+  padding: 60px;
 }
+
+main .contentInicial .inicial{
+  padding-top: 60px;
+}
+
 
 main .inicial h1{
   font-family: 'Assistant', sans-serif;
@@ -164,23 +170,17 @@ main .inicial h1{
 main .inicial p{
   font-family: 'Assistant';
   color: #5C6480;
-  max-width: 650px;
   font-style: normal;
   font-weight: 600;
   line-height: 26px;
   text-align: justify;
-  margin-right: 0;
-  display: flex;
-  width: 400px;
   padding: 5px;
 }
 
-main .inicial #pMaior{
-  font-size: 16px;
-}
-
-main .inicial #pMenor{
-  font-size: 18px;
+main .inicial .icons{
+  padding-right: 5px;
+  text-align: center;
+  padding: 10px 0 15px 0;
 }
 
 main .inicial .buttons{
@@ -191,6 +191,11 @@ main .inicial .buttons{
   border-radius: 69px;
   background: #FFF;
   cursor: pointer;
+  align-content: center;
+}
+main .inicial .divButtons{
+  display: flex;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -216,6 +221,19 @@ main .inicial #btnSaibaMais{
   line-height: normal;
 }
 
+@media screen and (max-width: 940px){
+  main .contentInicial{
+    display: inline;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+  }
+  main .contentInicial p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 main .inicial #btnMissão:hover{
   background-color: #24293b;
   transition: 0.5s;
@@ -226,6 +244,7 @@ main .inicial #btnSaibaMais:hover{
   transition: 0.5s;
 }
 
+/*CONHEÇA O APP
 main .contentConAPP{
   min-width: 1000px;
 }
@@ -237,4 +256,32 @@ main .contentConAPP img{
  main .contentConAPP .conteúdo{
   z-index: 1;
   
+ }*/
+
+ /*CONHECENDO OS RECURSOS*/
+ 
+ table{
+  width: 100%;
  }
+
+.recCima{
+  display: flex;
+  gap: 15px;
+  padding: 0 0 15px 15px;
+}
+.recBaixo{
+  display: flex;
+  gap: 15px;
+  padding: 0 0 15px 15px;
+}
+
+.divRecAzul{
+  height: 300px;
+  min-width: 250px;
+  background-color: red;
+}
+.divRecBranca{
+  height: 300px;
+  min-width: 250px;
+  background-color: blue;
+}
