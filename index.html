@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style.css" />
   <body>
-    <header>
+    <header id="header">
       <nav class="nav-bar">
         <a href="index.html"><img id="logo" src="src/images/Logo_tucano.png" alt="Logo Aplicação"></a>
 
@@ -47,14 +47,14 @@
           <p style="font-size: 16px; width: 400px;">Descubra novas possibilidades com o TUCANO que vai mudar o jeito que escola e alunos interagem. </p>
 
           <div class="icons">
-            <img src="src/icons/escola.png" alt="Escola">
+            <img src="src/icons/escola.png" style="width: 70px;" alt="Escola">
             <img src="src/icons/setas.png" style="width: 50px;" alt="Setas">
-            <img src="src/icons/diploma.png" alt="Diploma">
+            <img src="src/icons/diploma.png" style="width: 70px;" alt="Diploma">
           </div>
 
           <div class="divButtons">
-            <button class="buttons" id="btnSaibaMais">Saiba Mais</button>
-            <button class="buttons" id="btnMissão">Missão</button>
+            <a href="#recursosPag"><button class="buttons" id="btnSaibaMais">Saiba Mais</button></a>
+            <a href="#missãoPag"><button class="buttons" id="btnMissão">Missão</button></a>
           </div>
         </div>
 
@@ -92,14 +92,18 @@
 
       <div class="divRecBranca">
         <div class="topoBranca">
-
+          <img src="src/icons/livros.png" style="width: 64px;
+                                                height: 64px;
+                                                margin-top: 10px;" alt="Livros">
         </div>
         <p class="pBranca">Com o TUCANO você pode acessar a biblioteca completa da escola, podendo reservar um livro online, pulando toda a burocracia na biblioteca.</p>
       </div>
 
       <div class="divRecAzul">
         <div class="topoAzul">
-
+          <img src="src/icons/achados-e-perdidos.png" style="width: 64px;
+                                                height: 64px;
+                                                margin-top: 10px;" alt="Achados e Perdidos">
         </div>
         <p class="pAzul">Se você perdeu algum item na escola, talvez você devesse procurar nos achados e perdidos do App, uma maneira facil e rapida de saber se e quem encontrou o seu item.</p>
       </div>
@@ -109,21 +113,27 @@
     <div class="recBaixo">
       <div class="divRecBranca">
         <div class="topoBranca">
-
+          <img src="src/icons/cracha.png" style="width: 64px;
+                                                height: 64px;
+                                                margin-top: 10px;" alt="Carteirinha Escolar">
         </div>
         <p class="pBranca">Com o TUCANO você tem acesso a carteirinha escolar, contendo todas as informações cruciais para qualquer situação onde for necessario uma identificação escolar.</p>
       </div>
 
       <div class="divRecAzul">
         <div class="topoAzul">
-
+          <img src="src/icons/cardapio.png" style="width: 64px;
+                                                height: 64px;
+                                                margin-top: 10px;" alt="Cardápio">
         </div>
         <p class="pAzul">No app você pode saber antecipadamente o cardapio do dia, te poupando de uma possivel frustração depois de uma longa espera na fila. Vai que é atum né? eca! </p>
       </div>
 
       <div class="divRecBranca">
         <div class="topoBranca">
-
+          <img src="src/icons/compartilhar-postagem.png" style="width: 64px;
+                                                height: 64px;
+                                                margin-top: 10px;" alt="Postagens">
         </div>
         <p class="pBranca">Dentro do App você pode acessar o FEED ESCOLAR, uma forma facil da escola e gremio escolar comunicarem os alunos, além de divulgar eventos que possam acontecer.</p>
       </div>
@@ -146,8 +156,9 @@
       <span class="aspasFrase">"</span><p class="pMissão">Nosso objetivo desde o principio tem como base a aproximação entre aluno e diretoria escolar, que em muitas ocasiões tem uma comunicação confusa. A partir desse conceito, começamos a adaptar o App e o site para ajudar o aluno em seus proprios estudos, colocando horarios dinamicos, cardapio do dia, presença de professores, dentre outras coisas.</p>
       <p class="pMissão" class="Autor">Aluno envolvido no desenvolvimento.</p>
     </div>
-
     </main>
+
+    <footer class="footer"><a href="#inicioPag"><img src="src/images/Logo_tucano.png" alt=""></a></footer>
   </body>
   <script src="src/JavaSript/index.js"></script>
 </html>

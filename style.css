@@ -133,427 +133,7 @@ header h1{
 /*PARTE INICIAL*/
 
 main{
-  background: #ECF0F1;@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@300&display=swap');
-  
-  /*PÁGINA*/
-  
-  * {
-      margin: 0;
-      padding: 0;
-    }
-  
-    header{
-      position: fixed;
-      /*height: 50px;*/
-      background-color: #f7f8fA;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-  }
-  
-  header h1{
-    color: #3A4365;
-  }
-  
-    header .barra{
-      position: relative;
-      display: flex;
-      width: 0px;
-      height: 30px;
-      margin: 0 5px 0 15px;
-      border: 1px solid #3A4365;
-  }
-    
-    header a {
-      font-family: 'Nunito';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 12px;
-      line-height: 16px;
-      text-align: center;
-      text-decoration: none;
-      color: #5C6480;
-    }
-    
-    a:hover {
-      color: #393d4e;
-    }
-    
-    header #logo{
-      position: relative;
-      height: 30px;
-      width: 30px;
-      padding: 15px;
-  }
-    
-  .nav-bar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Nunito', sans-serif;
-    background: #f7f8fA;
-    height: 8vh;
-    gap: 15px;
-  }
-  
-  /*--MOBILE MENU HAMBURGER--*/
-  .nav-list{
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-list ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  }
-  
-  .nav-item{
-    margin: 0 15px
-  }
-  
-  .mobile-menu-icon{
-    display: none;
-  }
-  
-  .mobile-menu-icon .icon{
-    stop-color: #393d4e;
-  }
-  
-  .mobile-menu{
-    display: none;
-  }
-  
-  @media screen and (max-width: 530px){
-    .nav-bar{
-      padding: 0.1rem 1rem;
-    }
-    .nav-item{
-      display: none;
-    }
-    .mobile-menu-icon{
-      display: block;
-    }
-  
-    .mobile-menu-icon button{
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-    }
-  
-    .mobile-menu{
-      width: 100%;
-    }
-  
-    .mobile-menu ul{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .mobile-menu .nav-item{
-      display: block;
-      padding: 1rem 2rem 1rem;
-      margin: auto;
-    }
-    .open{
-      display: block;
-    }
-  }
-  
-  /*MAIN*/
-  
-  /*PARTE INICIAL*/
-  
-  main{
-    background: #ECF0F1;
-  }
-  
-  main .contentInicial{
-    display: flex;
-    flex-direction: row;
-    background-color: #ECF0F1;
-    justify-content: space-around;
-    padding: 50px ;
-  }
-  
-  main .contentInicial .inicial{
-    padding-top: 60px;
-  }
-  
-  
-  main .inicial h1{
-    font-family: 'Assistant', sans-serif;
-    width: 100%;
-    height: 76px;
-    font-weight: 700;
-    font-weight: bolder;
-    font-size: 96px;
-    line-height: 63px;
-    max-width: 700px;
-    display: inline-block;
-    margin: 7px;
-  
-    background: linear-gradient(180deg, #3A4365 23.33%, #FFF 121.67%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  main .inicial p{
-    font-family: 'Assistant';
-    color: #5C6480;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
-    text-align: justify;
-    padding: 5px;
-  }
-  
-  main .inicial .icons{
-    padding-right: 5px;
-    text-align: center;
-    padding: 25px 0 23px 0;
-  }
-  
-  main .inicial .buttons{
-    width: 140px;
-    height: 50px;
-    flex-shrink: 0;
-    border: 0;
-    border-radius: 69px;
-    background: #FFF;
-    cursor: pointer;
-    align-content: center;
-  }
-  main .inicial .divButtons{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  main .inicial #btnMissão{
-    background-color: #3A4365;
-    color: #FFF;
-    text-align: center;
-    font-family: Assistant;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  
-  main .inicial #btnSaibaMais{
-    background-color: #FFF;
-    color: #3A4365;
-    text-align: center;
-    font-family: Assistant;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  
-  @media screen and (max-width: 940px){
-    main .contentInicial{
-      display: inline;
-      width: 100%;
-      text-align: center;
-      align-content: center;
-    }
-    main .contentInicial p{
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  main .inicial #btnMissão:hover{
-    background-color: #24293b;
-    transition: 0.5s;
-  }
-  
-  main .inicial #btnSaibaMais:hover{
-    background-color: #f7f8fA;
-    transition: 0.5s;
-  }
-  
-  /*CONHEÇA O APP
-  main .contentConAPP{
-    min-width: 1000px;
-  }
-  
-  main .contentConAPP img{
-    width: 100%;
-    z-index: -1;
-  }
-   main .contentConAPP .conteúdo{
-    z-index: 1;
-    
-   }*/
-  
-   /*CONHECENDO OS RECURSOS*/
-  
-   /*825px para descer as divs*/
-  
-  h2{
-    color: #3A4365;
-    font-family: Assistant;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    padding: 0 0 30px 0;
-    text-align: center;
-  }
-  
-  .recCima{
-    display: flex;
-    gap: 10%;
-    padding: 0 0 50px 15px;
-    justify-content: center;
-  }
-  .recBaixo{
-    display: flex;
-    gap: 10%;
-    padding: 0 0 100px 15px;
-    justify-content: center;
-  }
-  
-  .divRecAzul{
-    height: 300px;
-    min-width: 250px;
-    border-radius: 20px;
-    background-color: #3A4365;
-    
-  }
-  .divRecBranca{
-    height: 300px;
-    min-width: 250px;
-    border-radius: 20px;
-    background-color: #FFF;
-  }
-  
-  .bola{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ECF0F1;
-    text-align: center;
-    margin-top: 22px;
-  }
-  
-  #verde{
-    background-color: #00B489;
-  }
-  #amarelo{
-    background-color: #FFC700;
-  }
-  #vermelho{
-    background-color: #CC3535;
-  }
-  
-  .topoAzul{
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    width: 100%;
-    height: 85px;
-    background-color: #FFF;
-    border-radius: 20px 20px 0 0;
-  }
-  
-  .topoBranca{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-    height: 85px;
-    background-color: #3A4365;
-    border-radius: 20px 20px 0 0;
-  }
-  
-  .pAzul, .pBranca{
-    width: 200px;
-    text-align: justify;
-    font-family: Assistant;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: auto;
-    margin-top: 25px;
-  }
-  
-  p.pAzul{
-    color: #FFF;
-  }
-  p.pBranca{
-    color: #3A4365;
-  }
-  
-  @media screen and (max-width: 980px){
-      .recCima, .recBaixo{
-        display: inline;
-        justify-content: center;
-      }
-  
-      .divRecAzul, .divRecBranca{
-        height: 300px;
-        width: 350px;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  }
-  
-  
-  /*MISSÂO*/
-  
-  main .divMissão{
-    background-color: #FFF;
-    width: 95%;
-    margin: auto;
-    margin-bottom: 35px;
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  main .divMissão h3{
-    color: #3A4365;
-    font-family: Livvic;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 1000;
-    line-height: normal;
-    padding: 25px 0 25px 0;
-  }
-  
-  .pMissão{
-    color: #3A4365;
-    font-family: Assistant;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 650;
-    line-height: normal;
-    padding-bottom: 15px;
-  }
-  
-  .frasesLindas{
-    width: 90%;
-    margin: auto;
-  }
-  
-  .aspasFrase{
-    color: #3A4365;
-    font-family: Assistant;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 650;
-    line-height:normal;
-  }
-  
+  background: #ECF0F1;
 }
 
 main .contentInicial{
@@ -572,10 +152,10 @@ main .contentInicial .inicial{
 main .inicial h1{
   font-family: 'Assistant', sans-serif;
   width: 100%;
-  height: 76px;
+  height: 100px;
   font-weight: 700;
   font-weight: bolder;
-  font-size: 96px;
+  font-size: 100px;
   line-height: 63px;
   max-width: 700px;
   display: inline-block;
@@ -778,12 +358,27 @@ p.pBranca{
   color: #3A4365;
 }
 
+@media screen and (max-width: 980px){
+    .recCima, .recBaixo{
+      display: inline;
+      justify-content: center;
+    }
+
+    .divRecAzul, .divRecBranca{
+      height: 300px;
+      width: 350px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+
 /*MISSÂO*/
 
 main .divMissão{
   background-color: #FFF;
   width: 95%;
-  height: 100px;
   margin: auto;
   margin-bottom: 35px;
   text-align: center;
@@ -797,7 +392,7 @@ main .divMissão h3{
   font-style: normal;
   font-weight: 1000;
   line-height: normal;
-  padding-top: 25px;
+  padding: 25px 0 25px 0;
 }
 
 .pMissão{
@@ -813,6 +408,7 @@ main .divMissão h3{
 .frasesLindas{
   width: 90%;
   margin: auto;
+  padding-bottom: 150px;
 }
 
 .aspasFrase{
@@ -822,4 +418,18 @@ main .divMissão h3{
   font-style: normal;
   font-weight: 650;
   line-height:normal;
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: #ffffff5c;
+  align-content: center;
+}
+
+footer img{
+  width: 25px;
+  height: 25px;
+  padding-top: 42px;
 }
