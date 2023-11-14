@@ -7,13 +7,13 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 
   header{
     position: fixed;
-    /*height: 50px;*/
     background-color: #f7f8fA;
-    width: 100%;
+    width: 110%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -61,6 +61,7 @@ header h1{
   background: #f7f8fA;
   height: 8vh;
   gap: 15px;
+  overflow-y: hidden;
 }
 
 /*--MOBILE MENU HAMBURGER--*/
@@ -99,6 +100,7 @@ header h1{
     display: none;
   }
   .mobile-menu-icon{
+    margin-top: 5px;
     display: block;
   }
 
@@ -148,7 +150,6 @@ main .contentInicial .inicial{
   padding-top: 60px;
 }
 
-
 main .inicial h1{
   font-family: 'Assistant', sans-serif;
   width: 100%;
@@ -193,6 +194,7 @@ main .inicial .buttons{
   cursor: pointer;
   align-content: center;
 }
+
 main .inicial .divButtons{
   display: flex;
   justify-content: center;
@@ -221,6 +223,13 @@ main .inicial #btnSaibaMais{
   line-height: normal;
 }
 
+main .inicialImg img{
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 940px){
   main .contentInicial{
     display: inline;
@@ -244,20 +253,57 @@ main .inicial #btnSaibaMais:hover{
   transition: 0.5s;
 }
 
-/*CONHEÇA O APP
-main .contentConAPP{
-  min-width: 1000px;
+main .imgConAPP{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
 }
 
-main .contentConAPP img{
-  width: 100%;
-  z-index: -1;
+main .ConAppMobile {
+  display: none;
 }
- main .contentConAPP .conteúdo{
-  z-index: 1;
-  
- }*/
 
+@media screen and (max-width: 730px){
+  main .imgConAPP{
+    display: none;
+  }
+
+  main .ConAppMobile{
+    display: inline;
+    width: 70%
+    
+  }
+
+  main .ConAppMobile h2{
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  main .ConAppMobile p{
+    font-size: 20px;
+    font-family: Assistant, sans-serif;
+    color: #3A4365;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75%;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+
+  main .ConAppMobile img{
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
+}
  /*CONHECENDO OS RECURSOS*/
 
  /*825px para descer as divs*/
@@ -372,7 +418,6 @@ p.pBranca{
       margin-right: auto;
     }
 }
-
 
 /*MISSÂO*/
 
