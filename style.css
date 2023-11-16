@@ -414,6 +414,8 @@ p.pBranca{
   color: #3A4365;
 }
 
+/*Luiz Gustavo esteve aqui!*/
+
 @media screen and (max-width: 980px){
     .recCima, .recBaixo{
       display: inline;
